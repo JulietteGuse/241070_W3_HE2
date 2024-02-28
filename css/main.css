@@ -163,6 +163,7 @@ h1 {
 }
 
 .bottomNavLeft{
+    padding: 4px;
     float: left;
 }
 
@@ -181,7 +182,7 @@ h1 {
     float: right;
     padding-left: 4em;
     padding-right: 4em;
-    padding-top: 3em;
+    text-align: bottom;
 }
 
 footer{
