@@ -66,6 +66,8 @@ h1 {
 
 .imgTextOverlay img{
     width: 100%;
+    filter: blur(4px);
+    /*filter: grayscale(100%);*/
 }
 
 .bottomLeft{
@@ -99,4 +101,46 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-#filters{}
+#filters{
+    /*filter: grayscale(100%);*/
+    /*filter: sepia(100%);*/
+    filter: blur(4px);
+}
+
+.container{
+    position: relative;
+    width: 50%;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in;
+    background-color: #014b91;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}
+
+.overlayText{
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
