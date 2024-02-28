@@ -104,13 +104,13 @@ h1 {
 }
 
 .container{
-    float: left;
-    display: block;
-    margin-left: auto;
+    position: relative;
+    width: 50%;
 }
 
 .image{
     display: block;
+    float: right;
     width: 100%;
     height: auto;
 }
@@ -176,6 +176,15 @@ h1 {
     color: white;
 }
 
+.homeImg4Text{
+    display: contents;
+    float: right;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 3em;
+}
+
 footer{
-    text-align: end;
+    background-color: black;
+    color: #ffffff;
 }
